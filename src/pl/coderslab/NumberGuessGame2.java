@@ -9,12 +9,13 @@ public class NumberGuessGame2 {
     }
 
     static void game() {
-        System.out.println("Pomyśl liczbę od 1 do 1000 a ja ją zgadnę w max 10 próbach");
         int min = 0;
         int max = 1000;
         boolean success = false;
         int guess, feedback;
         Scanner sc = new Scanner(System.in);
+        System.out.println("Pomyśl liczbę od 1 do 1000 a ja ją zgadnę w max 10 próbach. Naciśnij enter aby rozpocząć zabawę");
+        sc.nextLine();
         while (!success) {
             guess = (min + max) / 2;
             System.out.println("Zgaduję: " + guess + "\nWpisz z konsoli "
