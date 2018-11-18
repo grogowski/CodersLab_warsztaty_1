@@ -23,7 +23,7 @@ public class DiceSimulator {
             String[] evenSmallerParts = parts[1].split("-");
             diceType = getDiceType(evenSmallerParts[0]);
             int temp = Integer.parseInt(evenSmallerParts[1]);
-            addOrSubtract = temp - 2*temp;
+            addOrSubtract = -temp;
         } else {
             addOrSubtract = 0;
             diceType = getDiceType(parts[1]);
